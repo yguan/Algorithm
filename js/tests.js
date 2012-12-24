@@ -14,7 +14,7 @@ requirejs.config({
 
 require.config({
     baseUrl: 'js/lib',
-    urlArgs: 'cb=' + Math.random(),
+//    urlArgs: 'cb=' + Math.random(),
     paths: {
         app: '../app',
         jasmine: 'jasmine/jasmine',
@@ -32,7 +32,10 @@ require.config({
     }
 });
 
-require(['jasmine-html', 'spec/sorting-spec'], function (jasmine) {
+require(['jasmine-html',
+    'spec/sorting-spec',
+    'spec/prime-spec'
+    ], function (jasmine) {
 
     // Set up the HTML reporter - this is responsible for
     // aggregating the results reported by Jasmine as the
