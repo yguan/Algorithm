@@ -1,0 +1,1 @@
+require(["jasmine-html","spec/sorting-spec","spec/prime-spec"],function(e){var t=new e.HtmlReporter,n=e.getEnv();n.specFilter=t.specFilter,n.addReporter(t),n.execute()});

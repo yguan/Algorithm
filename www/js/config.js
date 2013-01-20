@@ -1,11 +1,12 @@
 require.config({
-	//baseUrl: '../',
+	//appDir: '../Algorithm',
+	//baseUrl: 'js',
     paths: {
-        app: 'app',
-        spec: 'spec',
-		config: 'config',
-        jasmine: 'lib/jasmine/jasmine',
-        'jasmine-html': 'lib/jasmine/jasmine-html'
+        app: 'js/app',
+        spec: 'js/spec',
+		config: 'js/config',
+        jasmine: 'js/lib/jasmine/jasmine',
+        'jasmine-html': 'js/lib/jasmine/jasmine-html'
     },
     shim: {
         jasmine: {
@@ -16,14 +17,15 @@ require.config({
             exports: 'jasmine'
         }
     },
-	dir: '../../algorithm-build', // build output folder
+	dir: '../../www-build', // build output folder
     modules: [
         {
-            name: 'tests',
+            name: 'js/tests',
 			exclude: [
                 'jasmine-html',
 				'config'
             ]
         }
-    ]
+    ],
+	optimize: "uglify"
 });

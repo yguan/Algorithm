@@ -6,8 +6,8 @@ module.exports = function(grunt) {
 		requirejs: {
 			compile: {
 				options: {
-					baseUrl: 'Algorithm',
-					mainConfigFile: 'Algorithm/js/build.js' // not working yet
+					baseUrl: 'www',
+					mainConfigFile: 'www/js/config.js'
 				}
 			}
 		}

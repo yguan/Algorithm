@@ -164,3 +164,6 @@ pip-log.txt
 
 # Webstorm folder
 .idea/
+
+# node.js modules
+node_modules/

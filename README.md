@@ -2,11 +2,11 @@
 
 This contains some algorithm implementations.
 
-## Building the Application (not working yet)
+## Building the Application
 
 Here are the build steps:
 
-1. Install the following node moduels:
+1. Go to the Algorithm folder and install the following node moduels:
 
 * `npm install -g grunt`
 * `npm install grunt-contrib-requirejs`
